@@ -26,3 +26,5 @@ We have launched an online demo for this module: [https://lyear.samples.easyabp.
 
 This template refers to [Light-Year-Admin-Template](https://gitee.com/yinqi/Light-Year-Admin-Template), see [Light-Year-Admin-Template](https://gitee.com/yinqi/Light-Year-Admin-Template) document for more information.
 
+[Light-Year-Admin-Template v3.3.7](http://lyear.itshubao.com/index.html#!)
+[Light-Year-Admin-Template v5.0](https://gitee.com/yinqi/Light-Year-Admin-Template-v5)

@@ -1,7 +1,8 @@
-﻿using System.Threading.Tasks;
-using EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Toolbar.LanguageSwitch;
+﻿using EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Toolbar.LanguageSwitch;
+using EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Toolbar.SkinSwitch;
 using EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Themes.LYear.Components.Toolbar.UserMenu;
 using Microsoft.Extensions.DependencyInjection;
+using System.Threading.Tasks;
 using Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.Toolbars;
 using Volo.Abp.Localization;
 using Volo.Abp.Users;
@@ -22,6 +23,7 @@ namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Toolbars
                 return;
             }
 
+
             var languageProvider = context.ServiceProvider.GetService<ILanguageProvider>();
 
             //TODO: This duplicates GetLanguages() usage. Can we eleminate this?
@@ -35,6 +37,8 @@ namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Toolbars
             {
                 context.Toolbar.Items.Add(new ToolbarItem(typeof(UserMenuViewComponent)));
             }
+
+            //context.Toolbar.Items.Add(new ToolbarItem(typeof(SkinSwitchViewComponent)));
         }
     }
 }
