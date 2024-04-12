@@ -6,7 +6,7 @@ namespace EasyAbp.Abp.AspNetCore.Mvc.UI.Theme.LYear.Bundling
     {
         public override void ConfigureBundle(BundleConfigurationContext context)
         {
-            context.Files.RemoveAll(x => x.Contains("bootstrap.css"));
+            context.Files.RemoveAll(x => x.FileName.Contains("bootstrap.css"));
             context.Files.Add("/themes/lyear/assets/css/bootstrap.min.css");
             context.Files.Add("/themes/lyear/assets/css/materialdesignicons.min.css");
             context.Files.Add("/themes/lyear/assets/css/style.min.css");
